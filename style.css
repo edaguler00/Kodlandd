@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1{ 
+    color:rgba(255,255,255,255); font-size:60px 
+}
+header{
+    background-color: rgba(255,191,105,255)
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    color:rgb(0, 0, 0);
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header a{
+    padding: 8px 13px;
+    color:rgb(0, 0, 0);
+}
+header a:hover{
+    color: rgb(198, 117, 25);    
+}
+
+#pop-it-first{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh);
+
+}
+.pop-it-first_text{
+    text-align: left;
+    padding-left: 60px;
+    font-size: 20px;
+
+}
+#pop-it-first button{ 
+    margin-top: 30px;
+    font-size: 1.1em; 
+}
+
+#pop-it-sec{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#pop-it-sec h2{
+    padding-bottom: 20px;
+}
+
+#products{
+    background-color: rgba(203,243,240,255);
+    text-align: center;
+}
+#products .container{
+    padding: 50px 12px;
+}
+#products h2{
+    padding-top: 50px;
+    font-size: 1.5rem;
+}
+
+#products .product{
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+#products .product h3{
+    padding-top: 280px;
+    text-align: center;
+}
+.product:first-child{
+    background-image: url(images/square.png);
+}
+.product:nth-child(2){
+    background-image:  url(images/amongus.png);
+}
+.product:nth-child(3){
+    background-image: url(images/round.png);
+}
+
+#pop-it-third .container{
+    display:flex;
+    flex-direction: row-reverse;
+    height:60vh;
+    background-image: url(images/bg-grid2.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+}
+
+#pop-it-third .explanation_for_product{
+    text-align: initial;
+    font-size:0.7rem;
+    padding-left: 20px;
+}
+
+#pop-it-third .image_container{
+    height: 150px;
+    width:250px;
+    background-image: url(images/photo.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+
+}
+
+footer{
+    background: #403E39;
+    padding: 1rem 0rem;
+}
+footer .footer-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+footer .footer-logo_text{
+    font-size: large;
+    color:white;
+    padding-left: 30px;
+}
+footer a{
+    color:white;
+    padding-right: 30px;
+    font-size:0.9rem;
+}
+footer a:hover{
+    color: rgb(255, 166, 0);    
+}
+
+#pop-it-first button{ 
+    background-color: rgba(203,243,240,255);
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+#pop-it-first button:hover{ 
+    background-color: rgba(250,243,240,255);
+}
+button{
+    font-size: 1.5em;
+    margin: 10px 20px ;
+    padding: 10px 20px;
+    color:black;
+    border: none;
+    background-color:rgb(249,187,106);
+
+}
+
+button:hover{
+    background-color:rgb(236, 180, 9);
+}
+
+
+@media (min-width: 858px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #products .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #products .product{
+        padding: 50px;
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+    #pop-it-third  .explanation_for_product{
+        text-align: initial;
+        font-size:1.1rem;
+        padding-right: 65px;
+    }
+    
+    #pop-it-third  .image_container{
+        height: 250px;
+        width:300px;
+        background-image: url(images/photo.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    
+    }
+
+    footer a{
+        color:white;
+        padding-right: 90px;
+        font-size:1rem;
+    }
+}
